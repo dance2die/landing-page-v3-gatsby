@@ -8,7 +8,7 @@ function ExternalLink({ url, ...rest }) {
       href={url}
       onClick={e => e.stopPropagation()}
       target="_blank"
-      rel="noreferrer"
+      rel="noopener noreferrer"
       {...rest}
     />
   )
