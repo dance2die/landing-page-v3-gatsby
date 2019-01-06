@@ -60,7 +60,39 @@ function SEO({ description, lang, meta, keywords, title }) {
                   : []
               )
               .concat(meta)}
-          />
+          >
+            <link
+              rel="stylesheet"
+              href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+            />
+            <link
+              rel="stylesheet"
+              href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css"
+            />
+            <link
+              rel="stylesheet"
+              href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css"
+            />
+
+            <link
+              rel="stylesheet"
+              href="https://use.fontawesome.com/releases/v5.6.3/css/solid.css"
+              integrity="sha384-+0VIRx+yz1WBcCTXBkVQYIBVNEFH1eP6Zknm16roZCyeNg2maWEpk/l/KsyFKs7G"
+              crossorigin="anonymous"
+            />
+            <link
+              rel="stylesheet"
+              href="https://use.fontawesome.com/releases/v5.6.3/css/brands.css"
+              integrity="sha384-1KLgFVb/gHrlDGLFPgMbeedi6tQBLcWvyNUN+YKXbD7ZFbjX6BLpMDf0PJ32XJfX"
+              crossorigin="anonymous"
+            />
+            <link
+              rel="stylesheet"
+              href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css"
+              integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0"
+              crossorigin="anonymous"
+            />
+          </Helmet>
         )
       }}
     />
