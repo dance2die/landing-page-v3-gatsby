@@ -60,8 +60,15 @@ Layout related
 
 */
 
-.layout {
+.gatsby-root {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.layout {
+  height: 100%;
   display: grid;
 
   // prettier-ignore
@@ -73,7 +80,9 @@ Layout related
 
   @media #{$mobile} {
     // prettier-ignore
-    grid: "center"   100vh / 1fr;
+    grid: "header"   10em
+          "center"   1fr
+          / 1fr;
   }
 }
 
@@ -86,6 +95,11 @@ head {
 
   &.title {
     
+  }
+
+  @media #{$mobile} {
+    // prettier-ignore
+    grid-area: header;
   }
 }
 
@@ -110,10 +124,10 @@ head {
 
   @media #{$mobile} {
     // prettier-ignore
-    grid: "one"   1fr
-          "two"   1fr
-          "three" 1fr
-          "four"  1fr
+    grid: "one"    1fr
+          "two"    1fr
+          "three"  1fr
+          "four"   1fr
          / 1fr;
   }
 }
