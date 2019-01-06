@@ -93,14 +93,18 @@ head {
   justify-content: center;
   align-items: center;
 
-  &.title {
-    
-  }
-
   @media #{$mobile} {
     // prettier-ignore
     grid-area: header;
   }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 1.5em 0;
 }
 
 
