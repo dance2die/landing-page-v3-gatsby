@@ -48,7 +48,7 @@ function Box({ name, title, body }) {
       {clickedBoxes[name] && (
         <Body>
           {body}
-          <button className="close-button button-outline" type="button">
+          <button className="close-button button-clear" type="button">
             Close
           </button>
         </Body>
