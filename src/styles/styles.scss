@@ -60,13 +60,6 @@ Layout related
 
 */
 
-.gatsby-root {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .layout {
   height: 100vh;
   display: grid;
@@ -75,13 +68,14 @@ Layout related
   grid:
     ". header ." 1fr
     ". center ." $centerHeight * 1px
-    ". .      ." 1fr
+    ". footer ." 1fr
     / 1fr ($centerWidth * 1px) 1fr;
 
   @media #{$mobile} {
     // prettier-ignore
     grid: "header"   10em
           "center"   1fr
+          "footer"   5em
           / 1fr;
   }
 }
@@ -100,6 +94,8 @@ head {
 }
 
 footer {
+  grid-area: footer;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,6 +123,7 @@ footer {
     "three .            four";
 
   @media #{$mobile} {
+    height: 75vh;
     // prettier-ignore
     grid: "one"    1fr
           "two"    1fr
@@ -203,8 +200,8 @@ footer {
   }
 
   @media #{$mobile} {
-    width: 100%;
-    height: 100%;
+    // width: 100%;
+    // height: 100%;
     border-radius: 0;
   }
 }

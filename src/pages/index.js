@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import {
@@ -10,6 +9,8 @@ import {
   SocialBox,
   MiscBox,
 } from '../components/Boxes'
+import { ExternalLink } from '../components/util'
+
 import '../styles/styles.scss'
 
 const IndexPage = () => (
@@ -25,9 +26,12 @@ const IndexPage = () => (
       <MiscBox />
     </BoxContainer>
     <footer>
-      © {new Date().getFullYear()}, Built with
-      {` `}
-      <a href="https://www.gatsbyjs.org">Gatsby</a>
+      © {new Date().getFullYear()} Built with
+      <ExternalLink url="https://www.gatsbyjs.org">{` `}Gatsby</ExternalLink>
+      on{' '}
+      <ExternalLink url="https://codesandbox.io/s/5wjy6rvn3k">
+        CodeSandbox
+      </ExternalLink>
     </footer>
   </section>
 )
