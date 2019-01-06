@@ -1,16 +1,31 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
+import {
+  BoxContainer,
+  WritingsBox,
+  DevBox,
+  SocialBox,
+  MiscBox,
+} from '../components/Boxes'
+import '../styles/styles.scss'
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <section className="layout">
+      <head>
+        <h1 className="title">Hi, I am Sung</h1>
+      </head>
+      <BoxContainer>
+        <WritingsBox />
+        <DevBox />
+        <SocialBox />
+        <MiscBox />
+      </BoxContainer>
+    </section>
   </Layout>
 )
 
