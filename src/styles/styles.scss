@@ -13,10 +13,10 @@ $boxHeight: 100%;
 $boxWidth: 100%;
 $boxBorderRadius: 6px;
 
-$box-blog-color: red;
-$box-social-color: blue;
-$box-github-color: green;
-$box-misc-color: cyan;
+$box-blog-color: hsla(0, 75%, 75%, 0.8);
+$box-social-color: hsla(120, 75%, 75%, 0.8);
+$box-dev-color: hsla(60, 75%, 75%, 0.8);
+$box-misc-color: hsla(180, 75%, 75%, 0.90);;
 
 // https://sass-lang.com/guide#topic-6
 @mixin onClick() {
@@ -150,7 +150,7 @@ footer {
 
   .title {
     font-size: 3rem;
-    color: white;
+    color: #000000cc;
 
     @media #{$mobile} {
       font-size: 3.5rem;
@@ -172,7 +172,7 @@ footer {
   }
 
   &.DevBox {
-    background-color: $box-github-color;
+    background-color: $box-dev-color;
     grid-area: three;
     align-self: end;
 
