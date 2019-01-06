@@ -27,10 +27,12 @@ const IndexPage = () => (
     </BoxContainer>
     <footer>
       © {new Date().getFullYear()} Built with
-      <ExternalLink url="https://www.gatsbyjs.org">{` `}Gatsby</ExternalLink>
-      on{' '}
+      <ExternalLink url="https://www.gatsbyjs.org">
+        <span style={{ margin: '0 0.5rem' }}>Gatsby</span>
+      </ExternalLink>
+      on
       <ExternalLink url="https://codesandbox.io/s/5wjy6rvn3k">
-        CodeSandbox
+        <span style={{ margin: '0 0.5rem' }}>CodeSandbox</span>
       </ExternalLink>
     </footer>
   </section>
