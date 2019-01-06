@@ -158,6 +158,10 @@ footer {
   }
 
   .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: hotpink;
   }
 

@@ -47,12 +47,10 @@ function Box({ name, title, body }) {
       <Title title={title} />
       {clickedBoxes[name] && (
         <Body>
-          <div>
-            {body}
-            <button className="close-button" type="button">
-              Close
-            </button>
-          </div>
+          {body}
+          <button className="close-button button-outline" type="button">
+            Close
+          </button>
         </Body>
       )}
     </BaseBox>
