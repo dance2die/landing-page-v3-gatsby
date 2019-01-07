@@ -28,7 +28,7 @@ function DevBox() {
         <li>
           <ExternalLink url="https://codesandbox.io/u/dance2die">
             <i className="fab fa-codepen" />
-            CodeSandBox
+            CodeSandbox
           </ExternalLink>
         </li>
       </ul>
