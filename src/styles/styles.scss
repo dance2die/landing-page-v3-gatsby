@@ -143,6 +143,8 @@ footer {
 }
 
 .box {
+  cursor: pointer;
+
   width: $boxWidth;
   height: $boxHeight;
   border-radius: $boxBorderRadius;
