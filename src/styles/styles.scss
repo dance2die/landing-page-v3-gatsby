@@ -3,8 +3,7 @@
 /* media related */
 $max-width: 650px;
 // https://davidwalsh.name/write-media-queries-sass
-$mobile: "(max-width: 650px)";
-
+$mobile: '(max-width: 650px)';
 
 $goldenRatio: 1.6180339887498948482;
 $centerHeight: 400;
@@ -16,7 +15,7 @@ $boxBorderRadius: 6px;
 $box-blog-color: hsla(0, 75%, 75%, 0.8);
 $box-social-color: hsla(120, 75%, 75%, 0.8);
 $box-dev-color: hsla(60, 75%, 75%, 0.8);
-$box-misc-color: hsla(180, 75%, 75%, 0.90);;
+$box-misc-color: hsla(180, 75%, 75%, 0.9);
 
 // https://sass-lang.com/guide#topic-6
 @mixin onClick() {
@@ -40,7 +39,9 @@ $box-misc-color: hsla(180, 75%, 75%, 0.90);;
 Global Settings
 
 */
-body, html, h1 {
+body,
+html,
+h1 {
   margin: 0;
   padding: 0;
 }
@@ -54,13 +55,13 @@ li {
 }
 
 a i {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 button.close-button.button-clear {
-    background-color: transparent;
-    border-color: transparent;
-    color: #000000aa;
+  background-color: transparent;
+  border-color: transparent;
+  color: #000000aa;
 }
 
 /*
@@ -75,10 +76,10 @@ Layout related
 
   // prettier-ignore
   grid:
-    ". header ." 1fr
-    ". center ." $centerHeight * 1px
-    ". footer ." 1fr
-    / 1fr ($centerWidth * 1px) 1fr;
+    "edge . header ." 1fr
+    "edge . center ." $centerHeight * 1px
+    "edge . footer ." 1fr
+    / 1fr 1fr ($centerWidth * 1px) 1fr;
 
   @media #{$mobile} {
     // prettier-ignore
@@ -112,13 +113,12 @@ footer {
   margin: 1.5em 0;
 }
 
-
 /*
   Box related
 */
 
 .box-container {
-  padding:0;
+  padding: 0;
   margin: 0;
   grid-area: center;
 
@@ -126,10 +126,10 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   // prettier-ignore
   grid-template-rows: 1fr minmax(0.2fr, 100%) 1fr;
-  grid-template-areas: 
-    "one   .            two "
-    ".     boxCenter    .   "
-    "three .            four";
+  grid-template-areas:
+    'one   .            two '
+    '.     boxCenter    .   '
+    'three .            four';
 
   @media #{$mobile} {
     height: 75vh;
@@ -154,7 +154,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-
 
   .title {
     font-size: 3rem;
@@ -223,9 +222,9 @@ footer {
 
 // https://www.cssmatic.com/box-shadow
 .shadow {
-  -webkit-box-shadow: 0px 0px 47px -5px rgba(0,0,0,0.81);
-  -moz-box-shadow: 0px 0px 47px -5px rgba(0,0,0,0.81);
-  box-shadow: 0px 0px 47px -5px rgba(0,0,0,0.81);
+  -webkit-box-shadow: 0px 0px 47px -5px rgba(0, 0, 0, 0.81);
+  -moz-box-shadow: 0px 0px 47px -5px rgba(0, 0, 0, 0.81);
+  box-shadow: 0px 0px 47px -5px rgba(0, 0, 0, 0.81);
 }
 
 .close-button {
