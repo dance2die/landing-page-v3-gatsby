@@ -79,7 +79,7 @@ Layout related
     "edge . header ." 1fr
     "edge . center ." $centerHeight * 1px
     "edge . footer ." 1fr
-    / 1fr 1fr ($centerWidth * 1px) 1fr;
+    / 0.5fr 0.5fr ($centerWidth * 1px) 1fr;
 
   @media #{$mobile} {
     // prettier-ignore
@@ -90,7 +90,7 @@ Layout related
   }
 }
 
-head {
+header {
   grid-area: header;
   display: flex;
   flex-direction: column;
