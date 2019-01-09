@@ -1,10 +1,11 @@
-import React, { lazy } from 'react'
+import React from 'react'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 function ExternalLink({ url, ...rest }) {
   // For rel="noreferrer", refer to
   // https://developers.google.com/web/tools/lighthouse/audits/noopener#recommendations
   return (
-    <a
+    <OutboundLink
       href={url}
       onClick={e => e.stopPropagation()}
       target="_blank"
@@ -14,6 +15,4 @@ function ExternalLink({ url, ...rest }) {
   )
 }
 
-const lazyImport = uri => lazy(() => import(uri))
-
-export { ExternalLink, lazyImport }
+export { ExternalLink }
