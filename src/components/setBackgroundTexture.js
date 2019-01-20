@@ -3,7 +3,9 @@ import 'd3-transition'
 import textures from 'textures'
 
 export default t => {
-  if (!window && !window.document) return
+  // if (!window && !window.document) return
+  // https://github.com/gatsbyjs/gatsby/issues/309#issuecomment-302043875
+  if (typeof window !== 'undefined') return
 
   const box = select('body')
   const svg = box
