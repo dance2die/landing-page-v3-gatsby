@@ -3,6 +3,8 @@ import 'd3-transition'
 import textures from 'textures'
 
 export default t => {
+  if (!window.document) return
+
   const box = select('body')
   const svg = box
     .append('svg')

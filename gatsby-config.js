@@ -34,6 +34,14 @@ module.exports = {
         exclude: ['/preview/**', '/do-not-track/me/too/'],
       },
     },
+    // {
+    //   resolve: 'gatsby-plugin-react-svg',
+    //   options: {
+    //     rule: {
+    //       include: /img/,
+    //     },
+    //   },
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
