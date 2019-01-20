@@ -139,7 +139,7 @@ footer {
 
   display: grid;
   // grid-template-columns: repeat(3, 1fr);
-  grid-template-columns: 1fr 0.7fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   // prettier-ignore
   grid-template-rows: 1fr minmax(0.2fr, 85%) 1fr;
   grid-template-areas:
