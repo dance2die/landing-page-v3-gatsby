@@ -11,6 +11,8 @@ import {
 } from '../components/Boxes'
 import { ExternalLink } from '../components/util'
 
+import Background from '../components/Background'
+
 import '../styles/styles.scss'
 
 const IndexPage = () => (
@@ -36,6 +38,7 @@ const IndexPage = () => (
         <span style={{ margin: '0 0.5rem' }}>CodeSandbox</span>
       </ExternalLink>
     </footer>
+    <Background />
   </section>
 )
 
