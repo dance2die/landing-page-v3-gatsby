@@ -1,6 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
+import textures from 'textures'
+
+import setBackgroundTexture from './setBackgroundTexture'
+
+// https://riccardoscalco.it/textures/
+setBackgroundTexture(
+  textures
+    .paths()
+    .d('woven')
+    .lighter()
+    .thicker()
+    .stroke('#11ab7e47')
+)
 
 const Layout = ({ children }) => (
   <StaticQuery
