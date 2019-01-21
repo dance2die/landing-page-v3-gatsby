@@ -1,6 +1,5 @@
 import React, { useEffect, useContext } from 'react'
 import classNames from 'classnames'
-import PropTypes from 'prop-types'
 
 import { default as BoxContext } from '../Context'
 
