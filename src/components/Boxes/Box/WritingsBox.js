@@ -12,7 +12,7 @@ function WritingsBox() {
         <li>
           <ExternalLink url="https://www.slightedgecoder.com/">
             <i className="fas fa-blog" />
-            Personal Blog
+            Blog
           </ExternalLink>
         </li>
         <li>
