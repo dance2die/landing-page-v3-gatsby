@@ -38,7 +38,10 @@ function Box({ name, title, faTitle, body }) {
     <BaseBox
       name={name}
       className={getBoxClass(name)}
-      onClick={() => setClickedBox(name)}
+      onClick={e => {
+        e.stopPropagation()
+        setClickedBox(name)
+      }}
     >
       <h2>
         <i className={`fas ${faTitle}`} />

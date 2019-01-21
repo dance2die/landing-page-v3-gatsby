@@ -18,12 +18,14 @@ function Container({ children }) {
     setClickedBoxes({ ...resetClicked(), [boxName]: !previous })
   }
 
-  const contextValue = { clickedBoxes, setClickedBox }
+  const closeAllBoxes = () => {
+    setClickedBoxes({ ...resetClicked() })
+  }
+
+  const contextValue = { clickedBoxes, setClickedBox, closeAllBoxes }
 
   return (
-    <BoxContext.Provider value={contextValue}>
-      <article className="box-container">{children}</article>
-    </BoxContext.Provider>
+    <BoxContext.Provider value={contextValue}>{children}</BoxContext.Provider>
   )
 }
 
