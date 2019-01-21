@@ -20,12 +20,12 @@ module.exports = {
         display: `minimal-ui`,
       },
     },
-    {
-      resolve: `gatsby-plugin-favicon`,
-      options: {
-        logo: './src/favicon.png',
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-favicon`,
+    //   options: {
+    //     logo: './src/favicon.png',
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
