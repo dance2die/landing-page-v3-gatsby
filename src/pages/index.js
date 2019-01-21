@@ -18,7 +18,10 @@ import '../styles/styles.scss'
 
 const IndexPage = () => (
   <section className="layout">
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO
+      title="Welcome to Sung's Domain 🚀"
+      keywords={[`gatsby`, `application`, `react`]}
+    />
     <header>
       <h1 className="title">
         Hi, I am Sung{' '}
