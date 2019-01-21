@@ -6,6 +6,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import favicon from '../favicon.png'
 
 function SEO({ description, lang, meta, keywords, title }) {
+  /*https://github.com/gatsbyjs/gatsby/issues/2987#issuecomment-404972215 */
   return (
     <StaticQuery
       query={detailsQuery}
@@ -19,9 +20,8 @@ function SEO({ description, lang, meta, keywords, title }) {
             }}
             title={title}
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}
-            {/*https://github.com/gatsbyjs/gatsby/issues/2987#issuecomment-404972215 */}
             link={[
-              { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+              { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` },
             ]}
             meta={[
               {
