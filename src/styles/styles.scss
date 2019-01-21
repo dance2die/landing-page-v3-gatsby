@@ -139,14 +139,13 @@ footer {
   align-items: center;
 
   margin: 1.5em 0;
+
+  @media #{$mobile} {
+    font-size: smaller;
+  }
 }
 
 article > svg {
-  // position: absolute;
-  // top: calc(50vh - 70px);
-  // left: calc(50vw - 70px);
-  // width: 140px;
-  // height: 140px;
   position: absolute;
   top: calc(50vh - 240px);
   left: calc(50vw - 450px);
