@@ -11,6 +11,7 @@ import {
 } from '../components/Boxes'
 import { ExternalLink } from '../components/util'
 
+import BoxCenter from '../components/BoxCenter'
 import Background from '../components/Background'
 
 import '../styles/styles.scss'
@@ -18,11 +19,11 @@ import '../styles/styles.scss'
 const IndexPage = () => (
   <section className="layout">
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div className="edge" />
     <header>
       <h1 className="title">Hi, I am Sung 👋</h1>
     </header>
     <BoxContainer>
+      <BoxCenter />
       <WritingsBox />
       <DevBox />
       <SocialBox />

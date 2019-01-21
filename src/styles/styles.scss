@@ -61,6 +61,12 @@ body {
   font-family: 'Space Mono', monospace !important;
 }
 
+header > h1 {
+  @media #{$mobile} {
+    font-size: 3.5rem;
+  }
+}
+
 li {
   list-style: none;
 }
@@ -98,9 +104,9 @@ Layout related
   // prettier-ignore
   grid:
     ". . top ." 0.7em
-    "header header header header" 1fr
-    "edge   .       center  ." $centerHeight * 1px
-    ". . footer ." 1fr
+    "header header   header  header" 1fr
+    ".      .       center  .     " $centerHeight * 1px
+    ".      .       footer  .     " 1fr
     / 0.7fr 0.3fr ($centerWidth * 1px) 1fr;
 
   @media #{$mobile} {
@@ -133,6 +139,18 @@ footer {
   align-items: center;
 
   margin: 1.5em 0;
+}
+
+article > svg {
+  position: absolute;
+  top: calc(50vh - 70px);
+  left: calc(50vw - 70px);
+  width: 140px;
+  height: 140px;
+
+  @media #{$mobile} {
+    display: none;
+  }
 }
 
 /*
@@ -207,6 +225,10 @@ footer {
     justify-content: center;
     align-items: center;
     color: hotpink;
+  }
+
+  &.boxCenter {
+    grid-area: boxCenter;
   }
 
   &.WritingsBox {
