@@ -12,6 +12,7 @@ $boxHeight: 100%;
 $boxWidth: 100%;
 $boxBorderRadius: 6px;
 
+$title-color: #000000;
 $box-blog-color: hsla(0, 75%, 75%, 0.8);
 $box-social-color: hsla(120, 75%, 75%, 0.8);
 $box-dev-color: hsla(60, 75%, 75%, 0.8);
@@ -49,17 +50,23 @@ html,
 h1 {
   margin: 0;
   padding: 0;
+  color: $title-color;
 }
 
 * {
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Space Mono', monospace !important;
+}
+
 li {
   list-style: none;
 }
 
-i.fas {
+.fas,
+.fab {
   margin-right: 1rem;
 }
 
@@ -170,6 +177,20 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  a {
+    color: #1442c3;
+    &:hover {
+      color: red;
+      text-decoration: underline;
+    }
+  }
+
+  h2 {
+    margin: 2rem 0;
+    color: $title-color;
+    font-size: xx-large;
+  }
 
   .title {
     font-size: 3rem;

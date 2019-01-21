@@ -63,8 +63,9 @@ function SEO({ description, lang, meta, keywords, title }) {
           >
             <link
               rel="stylesheet"
-              href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+              href="https://fonts.googleapis.com/css?family=Space+Mono"
             />
+
             <link
               rel="stylesheet"
               href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css"
