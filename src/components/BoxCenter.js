@@ -9,11 +9,11 @@ export default () => (
           cy="10"
           r="4"
           fill="transparent"
-          stroke="#343434"
+          stroke="#00000033"
           strokeWidth="2"
         />
       </pattern>
     </defs>
-    <path d="M 0 0 L 0 140 L 140 140 L 140 0 Z" fill="url(#wovk)" />
+    <path d="M 0 0 L 0 1540 L 1540 1540 L 1540 0 Z" fill="url(#wovk)" />
   </svg>
 )

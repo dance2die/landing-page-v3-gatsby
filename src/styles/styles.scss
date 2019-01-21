@@ -142,11 +142,16 @@ footer {
 }
 
 article > svg {
+  // position: absolute;
+  // top: calc(50vh - 70px);
+  // left: calc(50vw - 70px);
+  // width: 140px;
+  // height: 140px;
   position: absolute;
-  top: calc(50vh - 70px);
-  left: calc(50vw - 70px);
-  width: 140px;
-  height: 140px;
+  top: calc(50vh - 240px);
+  left: calc(50vw - 450px);
+  width: 900px;
+  height: 500px;
 
   @media #{$mobile} {
     display: none;
