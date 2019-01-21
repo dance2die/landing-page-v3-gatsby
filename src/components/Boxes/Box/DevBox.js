@@ -35,7 +35,9 @@ function DevBox() {
     )
   }
 
-  return <Box name={names.DevBox} title="Dev" body={<Body />} />
+  return (
+    <Box name={names.DevBox} title="Dev" faTitle="fa-code" body={<Body />} />
+  )
 }
 
 export default DevBox

@@ -31,7 +31,14 @@ function SocialBox() {
     )
   }
 
-  return <Box name={names.SocialBox} title="Social" body={<Body />} />
+  return (
+    <Box
+      name={names.SocialBox}
+      title="Social"
+      faTitle="fa-network-wired"
+      body={<Body />}
+    />
+  )
 }
 
 export default SocialBox

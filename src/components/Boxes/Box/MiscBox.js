@@ -25,7 +25,14 @@ function MiscBox() {
     )
   }
 
-  return <Box name={names.MiscBox} title="Misc." body={<Body />} />
+  return (
+    <Box
+      name={names.MiscBox}
+      title="Misc."
+      faTitle="fa-ghost"
+      body={<Body />}
+    />
+  )
 }
 
 export default MiscBox

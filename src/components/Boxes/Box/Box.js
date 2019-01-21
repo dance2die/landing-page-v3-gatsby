@@ -1,5 +1,6 @@
 import React, { useEffect, useContext } from 'react'
 import classNames from 'classnames'
+import PropTypes from 'prop-types'
 
 import { default as BoxContext } from '../Context'
 
@@ -21,15 +22,11 @@ function BaseBox({ name, className, onClick, ...rest }) {
   )
 }
 
-function Title({ title }) {
-  return <h1 className="title">{title}</h1>
-}
-
 function Body({ ...rest }) {
   return <section className="body" {...rest} />
 }
 
-function Box({ name, title, body }) {
+function Box({ name, title, faTitle, body }) {
   const { clickedBoxes, setClickedBox } = useContext(BoxContext)
 
   function getBoxClass(boxName) {
@@ -44,7 +41,10 @@ function Box({ name, title, body }) {
       className={getBoxClass(name)}
       onClick={() => setClickedBox(name)}
     >
-      <Title title={title} />
+      <h2>
+        <i className={`fas ${faTitle}`} />
+        {title}
+      </h2>
       {clickedBoxes[name] && (
         <Body>
           {body}

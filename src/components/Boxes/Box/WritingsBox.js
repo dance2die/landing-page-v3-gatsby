@@ -32,7 +32,14 @@ function WritingsBox() {
     )
   }
 
-  return <Box name={names.WritingsBox} title="Writings" body={<Body />} />
+  return (
+    <Box
+      name={names.WritingsBox}
+      title="Writings"
+      faTitle="fa-pencil-alt"
+      body={<Body />}
+    />
+  )
 }
 
 export default WritingsBox
