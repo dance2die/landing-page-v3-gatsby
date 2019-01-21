@@ -20,7 +20,12 @@ const IndexPage = () => (
   <section className="layout">
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <header>
-      <h1 className="title">Hi, I am Sung 👋</h1>
+      <h1 className="title">
+        Hi, I am Sung{' '}
+        <span role="img" aria-label="wave hand">
+          👋
+        </span>
+      </h1>
     </header>
     <BoxContainer>
       <BoxCenter />
