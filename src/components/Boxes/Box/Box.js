@@ -6,15 +6,12 @@ import { default as BoxContext } from '../Context'
 function BaseBox({ name, className, onClick, ...rest }) {
   const { clickedBox } = useContext(BoxContext)
 
-  useEffect(
-    () => {
-      // Unclick other boxes
-      if (clickedBox !== name) {
-        classNames(className, { clicked: false })
-      }
-    },
-    [clickedBox]
-  )
+  useEffect(() => {
+    // Unclick other boxes
+    if (clickedBox !== name) {
+      classNames(className, { clicked: false })
+    }
+  }, [clickedBox])
 
   return (
     <div className={classNames('box', className)} onClick={onClick} {...rest} />

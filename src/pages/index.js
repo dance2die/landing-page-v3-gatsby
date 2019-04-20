@@ -1,8 +1,5 @@
 import React, { useContext } from 'react'
 
-import SEO from '../components/seo'
-import BoxContext from '../components/Boxes/Context'
-
 import {
   BoxContainer,
   WritingsBox,
@@ -10,8 +7,9 @@ import {
   SocialBox,
   MiscBox,
 } from '../components/Boxes'
+import SEO from '../components/seo'
+import BoxContext from '../components/Boxes/Context'
 import { ExternalLink } from '../components/util'
-
 import BoxCenter from '../components/BoxCenter'
 import Background from '../components/Background'
 
@@ -19,7 +17,6 @@ import '../styles/styles.scss'
 
 const IndexContent = () => {
   const { closeAllBoxes } = useContext(BoxContext)
-  console.log(`context`, closeAllBoxes, BoxContext)
 
   return (
     <section className="layout" onClick={() => closeAllBoxes()}>
