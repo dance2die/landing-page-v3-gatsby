@@ -10,13 +10,13 @@ https://sungkim.co/
 
 ## V1
 
-URL: https://dance2die.github.io/
-Source: https://github.com/dance2die/dance2die.github.io
+- **URL**: https://dance2die.github.io/
+- **Source**: https://github.com/dance2die/dance2die.github.io
 
 ## V2
 
-URL: https://sungkim.netlify.com/
-Source: https://github.com/dance2die/landingpage
+- **URL**: https://sungkim.netlify.com/
+- **Source**: https://github.com/dance2die/landingpage
 
 # Credit
 
